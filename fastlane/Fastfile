@@ -3,8 +3,9 @@ lane :hello do |options|
   puts "hello"
 end
 
+desc "build and run tests"
+lane :tests do |options|
+  scan(clean: true)
 
-
-lane :tests do
-  run_tests(scheme: "TestCICD")
+  puts "finish tests"	
 end
