@@ -1,0 +1,10 @@
+desc "hello"
+lane :hello do |options|
+  puts "hello"
+end
+
+
+
+lane :tests do
+  run_tests(scheme: "TestCICD")
+end
